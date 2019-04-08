@@ -23,22 +23,40 @@ module.exports = {
 		'hosted_games': {
 			'first_war_wip_hosted_games': [
 				/War in the Plaguelands/i,
-				/WIP24/i
+				/WIP/i
 			],
 			
 			'panther_maps_hosted_games': [
+			/DARKNESS RISING/i,
+			/Glory of the Horde/i,
+			/Goth/i
 			],
 			
 			'lotr_rr_hosted_games': [
+			/Robert Rebels/i,
+			/GAME OF THRONES /i,
+			/LOTR/,
+			/BFME/,
+			/Battle for Middle Earth/i
 			],
 			
-			'awlr_daow_hosted_games': [				
+			'awlr_daow_hosted_games': [		
+				/Azeroth wars/i,
+				/LR/i,
+				/DAOW Reborn/i,
+				/DAOW/i
 			],
 			
 			'lt_hosted_games': [
+			/Lordaeron Tactics/i,
+			/LT/i,
+			]
+		},
+		commands:{
+			'hosted_games':[
+				/add/i,
 			],
-			
-			'lta_ltf_hosted_games': [
+			'staff':[
 			]
 		}
 	}

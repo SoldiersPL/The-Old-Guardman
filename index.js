@@ -1,7 +1,5 @@
 (require ('dotenv')).config ();
-
 let Discord = require ('discord.js');
-
 let config = require ('./config.js');
 let client = new Discord.Client ();
 let guild  = null;
