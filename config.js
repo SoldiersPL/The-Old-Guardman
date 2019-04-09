@@ -3,6 +3,17 @@ module.exports = {
 		token: process.env.DISCORD_TOKEN,
 		guild: 'The Old Guard'
 	},
+
+    onboarding: {
+        messageId: '',
+        emoji: '✅',
+        role: 'Member',
+        welcome: 'Hello!'
+    },
+
+    iam: [
+        'Member'
+    ],
 	
 	/**
 	 * gameMonitor: {
@@ -27,17 +38,17 @@ module.exports = {
 			],
 			
 			'panther_maps_hosted_games': [
-			/DARKNESS RISING/i,
-			/Glory of the Horde/i,
-			/Goth/i
+                /DARKNESS RISING/i,
+                /Glory of the Horde/i,
+                /Goth/i
 			],
 			
 			'lotr_rr_hosted_games': [
-			/Robert Rebels/i,
-			/GAME OF THRONES /i,
-			/LOTR/,
-			/BFME/,
-			/Battle for Middle Earth/i
+                /Robert Rebels/i,
+                /GAME OF THRONES /i,
+                /LOTR/,
+                /BFME/,
+                /Battle for Middle Earth/i
 			],
 			
 			'awlr_daow_hosted_games': [		
@@ -48,15 +59,8 @@ module.exports = {
 			],
 			
 			'lt_hosted_games': [
-			/Lordaeron Tactics/i,
-			/LT/i,
-			]
-		},
-		commands:{
-			'hosted_games':[
-				/add/i,
-			],
-			'staff':[
+                /Lordaeron Tactics/i,
+                /LT/i,
 			]
 		}
 	}
