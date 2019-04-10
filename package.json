@@ -1,0 +1,32 @@
+{
+  "name": "the-old-guardman",
+  "version": "1.0.0",
+  "description": "bot for old guard discord guild",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+	"start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoldiersPL/The-Old-Guardman.git"
+  },
+  "keywords": [
+    "discord.js",
+    "bot",
+    "heroku"
+  ],
+  "author": "the-old-guard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoldiersPL/The-Old-Guardman/issues"
+  },
+  "homepage": "https://github.com/SoldiersPL/The-Old-Guardman#readme",
+  "dependencies": {
+    "config.js": "^0.1.0",
+    "discord.js": "^11.4.2"
+  }
+}
