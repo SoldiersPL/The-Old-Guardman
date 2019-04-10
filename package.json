@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "bot for old guard discord guild",
   "main": "index.js",
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  },
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +30,7 @@
   },
   "homepage": "https://github.com/SoldiersPL/The-Old-Guardman#readme",
   "dependencies": {
-    "config.js": "^0.1.0",
-    "discord.js": "^11.4.2"
+    "discord.js": "^11.4.2",
+    "dotenv": "^7.0.0"
   }
 }
