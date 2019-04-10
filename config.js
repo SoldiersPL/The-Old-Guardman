@@ -1,7 +1,7 @@
 module.exports = {
 	discord: {
 		token: process.env.DISCORD_TOKEN,
-		guild: 'Test Server'
+		guild: 'The Old Guard'
 	},
 
     onboarding: {
