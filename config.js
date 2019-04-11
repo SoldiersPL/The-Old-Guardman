@@ -1,4 +1,15 @@
 module.exports = {
+	/**
+	*	discord: {
+	*		token: <Discord_Token>
+	*		guild: <guildName>
+	*	}
+	*
+	* This module is responsible for reading  .eve file to obtain <Discord_Token>
+	* needed to connect to the bot itself.
+	* In addition, it also checks if it had already been invited to <guildName>
+	* in case of it not being invited, it will return appopriate error messege in log file.
+	*/
 	discord: {
 		token: process.env.DISCORD_TOKEN,
 		guild: 'The Old Guard'
@@ -10,9 +21,22 @@ module.exports = {
         role: 'Member',
         welcome: 'Hello!'
     },
-
+	/**
+	*    iam: [
+	*        <roleName>
+	*    ]
+	*
+	* This module watches all posts made in a <guildName>. If a post in the
+	* <guildName> contains "!iam" command  and contains <roleName> 
+	* posting user will be granted appopriate <roleName>.
+	*/
     iam: [
-        'Member'
+		'Divided Conqueror',
+		'Grand Strategist',
+		'Champion of the Past',
+		'Hero of Middle Earth',
+		'Azerothian',
+		'Agent of Diplomacy'
     ],
 	
 	/**
