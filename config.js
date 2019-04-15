@@ -16,10 +16,10 @@ module.exports = {
 	},
 
     onboarding: {
-        messageId: '',
+        messageId: '421461981271425024',
         emoji: '✅',
-        role: 'Member',
-        welcome: 'Hello!'
+        role: 'Rankless',
+        welcome: 'Welcome to Old Guard, hope you enjoy your stay :)'
     },
 	/**
 	*    iam: [
