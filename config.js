@@ -15,11 +15,26 @@ module.exports = {
 		guild: 'The Old Guard'
 	},
 
+	/**
+	*	onboarding: {
+	*		messageId: <messegeID>
+	*		emoji: <reactionName>
+	*		role: <roleName>
+	*		welcome: <afterReactionMessege>
+	*		defaultrole: <defaultRole>
+	*	}
+	*
+	* This module is responsible for granting new users starting rank after they react
+	* under post  assigned to <messegeID> with <reactionName>.
+	* After that had been done, user will recieve private messege <afterReactionMessege>
+	* while at same time losing <defaultRole> and gaining <role>
+	*/
     onboarding: {
         messageId: '421461981271425024',
         emoji: '✅',
         role: 'Rankless',
-        welcome: 'Welcome to Old Guard, hope you enjoy your stay :)'
+        welcome: 'Welcome to Old Guard, hope you enjoy your stay :)',
+		defaultrole: 'Unranked'
     },
 	/**
 	*    iam: [
@@ -56,36 +71,57 @@ module.exports = {
 	 */
 	gameMonitor: {
 		'hosted_games': {
-			'first_war_wip_hosted_games': [
-				/War in the Plaguelands/i,
-				/WIP/i
-			],
-			
-			'panther_maps_hosted_games': [
-                /DARKNESS RISING/i,
-                /Glory of the Horde/i,
-                /Goth/i
-			],
-			
-			'lotr_rr_hosted_games': [
-                /Robert Rebels/i,
-                /GAME OF THRONES /i,
-                /LOTR/,
-                /BFME/,
-                /Battle for Middle Earth/i
-			],
-			
-			'awlr_daow_hosted_games': [		
+			'azerothian_hosted_games': [
 				/Azeroth wars/i,
-				/LR/i,
-				/DAOW Reborn/i,
-				/DAOW/i
+				/AW/i,
+				/Dark Ages/i,
+				/DAOW/i,
+				/Hyjal/i
 			],
-			
-			'lt_hosted_games': [
-                /Lordaeron Tactics/i,
-                /LT/i,
+
+			'grand_strat_hosted_games': [
+				/TFW/i,
+				/First War/i,
+				/WIP/i,
+				/Tel Sirion/i,
+				/Plaguelands/i,
+				/PLEC/i,
+			],
+
+			'middle_earth_hosted_games': [
+				/Robert/i,
+				/Rebels/i,
+				/GAME OF THRONES /i,
+				/Lord of the Rings/i,
+				/LOTR/i,
+				/BFME/i,
+				/Battle for Middle Earth/i,
+				/Ring/i,
+			],
+
+			'divided_conq_hosted_games': [
+				/DARKNESS RISING/i,
+				/Glory of the Horde/i,
+				/Goth/i,
+				/Kings of Azeroth/i,
+				/KoA/i,
+				/Rise of the Legion/i,
+			],
+
+			'lta_ltf_kta_hosted_games': [
+				/Lordaeron/i,
+				/Kalimdor/i,
+				/LTA/i,
+				/LTF/i,
+				/KTA/i,
+			],
+			'roleplay_hosted_games': [
+				/AOC RP/i,
+				/Roleplay/i,
+				/Age of Chaos/i,
+				/RP/i,
 			]
+			
 		}
 	}
 };
