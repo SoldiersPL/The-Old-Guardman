@@ -37,28 +37,49 @@ module.exports = {
 		defaultrole: 'Unranked'
     },
 	/**
-	*    iam: [
-	*        <roleName>
-	*    ]
+	*    iam: {
+	*        <roleName>:[
+	*			<pattern>,
+	*			<pattern>
+	*			]
+	*    }
 	*
 	* This module watches all posts made in a <guildName>. If a post in the
-	* <guildName> contains "!iam" command  and contains <roleName> 
+	* <guildName> contains "!iam" command  and contains <pattern> 
 	* posting user will be granted appopriate <roleName>.
 	*/
-    iam: [
-		'Divided Conqueror',
-		'Grand Strategist',
-		'Champion of the Past',
-		'Hero of Middle Earth',
-		'Azerothian',
-		'Agent of Diplomacy'
-    ],
+    iam: {
+		'Divided Conqueror':[
+		/Divided/i,
+		/Conqueror/i,
+		],
+		'Grand Strategist':[
+		/Grand/i,
+		/Strategist/i,
+		],
+		'Champion of the Past':[
+		/Champion/i,
+		/Past/i,
+		],
+		'Hero of Middle Earth':[
+		/Hero/i,
+		/Middle/i,
+		/Earth/i,
+		],
+		'Azerothian':[
+		/Azeroth/i,
+		],
+		'Agent of Diplomacy':[
+		/Agent/i,
+		/Diplomacy/i,
+		],
+    },
 	
 	/**
 	 * gameMonitor: {
 	 *     <monitorChannel>: {
 	 *         <targetChannel>: [
-	 *             <pattern>
+	 *             <pattern>,
 	 *             <pattern>
 	 *         ]
 	 *     }
