@@ -129,13 +129,6 @@ module.exports = {
 				/Rise of the Legion/i,
 			],
 
-			'lta_ltf_kta_hosted_games': [
-				/Lordaeron/i,
-				/Kalimdor/i,
-				/LTA/i,
-				/LTF/i,
-				/KTA/i,
-			],
 			'roleplay_hosted_games': [
 				/AOC RP/i,
 				/Roleplay/i,
