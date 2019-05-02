@@ -36,6 +36,7 @@ module.exports = {
         welcome: 'Welcome to Old Guard, hope you enjoy your stay :)',
 		defaultrole: 'Unranked'
     },
+	
 	/**
 	*    iam: {
 	*        <roleName>:[
@@ -134,7 +135,10 @@ module.exports = {
 				/Roleplay/i,
 				/Age of Chaos/i,
 				/RP/i,
-			]
+			],
+			'other_hosted_games': [
+				/.+/,
+			],
 			
 		}
 	}
