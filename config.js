@@ -113,7 +113,9 @@ module.exports = {
 			'middle_earth_hosted_games': [
 				/Robert/i,
 				/Rebels/i,
-				/GAME OF THRONES /i,
+				/GAME/i,
+				/Game of Thrones/i,
+				/GoT/i,
 				/Lord of the Rings/i,
 				/LOTR/i,
 				/BFME/i,
