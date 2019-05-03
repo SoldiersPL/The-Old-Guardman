@@ -37,6 +37,22 @@ module.exports = {
 		defaultrole: 'Unranked'
     },
 	
+	/** 
+    * reactionRole : {
+    *   messageId: <messageID>
+    *   roles: [[<emoji>, <role>]]
+    * }
+    *
+    * This module is responsible for granting users the role after they react to
+    * the role message <messageID> with <emoji>.
+    * They are then given the associated <role>
+  **/
+  	reactionRole: {
+  		messageId: '573946465701986312',
+  		roles: [[':friday_night:', 'AzerothianInhib'], [':bolvardisapproves:', 'RoleplayInhib'], [':sleep:', 'OtherInhib'], 
+  			[':olorin:', 'GrandInhib'], [':coin:', 'MiddleEarthInhib'], [':roar:', 'DividedInhib']];
+  	},
+	
 	/**
 	*    iam: {
 	*        <roleName>:[
