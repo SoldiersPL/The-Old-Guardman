@@ -48,7 +48,7 @@ module.exports = {
     * They are then given the associated <role>
   **/
   	reactionRole: {
-  		messageId: 'insertID',
+  		messageId: '573946465701986312',
   		roles: [[':friday_night:', 'AzerothianInhib'], [':bolvardisapproves:', 'RoleplayInhib'], [':sleep:', 'OtherInhib'], 
   			[':olorin:', 'GrandInhib'], [':coin:', 'MiddleEarthInhib'], [':roar:', 'DividedInhib']];
   	},
