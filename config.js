@@ -49,8 +49,13 @@ module.exports = {
   **/
   	reactionRole: {
   		messageId: '573946465701986312',
-  		roles: [[':friday_night:', 'AzerothianInhib'], [':bolvardisapproves:', 'RoleplayInhib'], [':sleep:', 'OtherInhib'], 
-  			[':olorin:', 'GrandInhib'], [':coin:', 'MiddleEarthInhib'], [':roar:', 'DividedInhib']];
+  		roles: [
+		[':friday_night:', 'AzerothianInhib'],
+		[':bolvardisapproves:', 'RoleplayInhib'], 
+		[':sleep:', 'OtherInhib'], 
+  		[':olorin:', 'GrandInhib'], 
+		[':coin:', 'MiddleEarthInhib'], 
+		[':roar:', 'DividedInhib']];
   	},
 	
 	/**
@@ -114,7 +119,10 @@ module.exports = {
 				/AW/i,
 				/Dark Ages/i,
 				/DAOW/i,
-				/Hyjal/i
+				/Hyjal/i,
+				/LTF/i,
+				/LTA/i,
+				/KTA/i,
 			],
 
 			'grand_strat_hosted_games': [
@@ -128,7 +136,7 @@ module.exports = {
 
 			'middle_earth_hosted_games': [
 				/Robert/i,
-				/Rebels/i,
+				/Rebel/i,
 				/Game of Thrones/i,
 				/GoT/i,
 				/Lord of the Rings/i,
