@@ -55,7 +55,8 @@ module.exports = {
 		[':sleep:', 'OtherInhib'], 
   		[':olorin:', 'GrandInhib'], 
 		[':coin:', 'MiddleEarthInhib'], 
-		[':roar:', 'DividedInhib']];
+		[':roar:', 'DividedInhib']
+		]
   	},
 	
 	/**
