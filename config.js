@@ -49,14 +49,14 @@ module.exports = {
   **/
   	reactionRole: {
   		messageId: '573946465701986312',
-  		roles: [
-		[':friday_night:', 'AzerothianInhib'],
-		[':bolvardisapproves:', 'RoleplayInhib'], 
-		[':sleep:', 'OtherInhib'], 
-  		[':olorin:', 'GrandInhib'], 
-		[':coin:', 'MiddleEarthInhib'], 
-		[':roar:', 'DividedInhib']
-		]
+  		roles: new Map([
+		['friday_night', 'AzerothianInhib'],
+		['bolvardisapproves', 'RoleplayInhib'], 
+		['sleep', 'OtherInhib'], 
+  		['olorin', 'GrandInhib'], 
+		['coin', 'MiddleEarthInhib'], 
+		['roar', 'DividedInhib']
+		])
   	},
 	
 	/**
@@ -115,6 +115,13 @@ module.exports = {
 	 */
 	gameMonitor: {
 		'hosted_games': {
+			
+			'roleplay_hosted_games': [
+				/AOC RP/i,
+				/Roleplay/i,
+				/Age of Chaos/i,
+				/RP/i,
+			],
 			'azerothian_hosted_games': [
 				/Azeroth wars/i,
 				/AW/i,
@@ -124,6 +131,19 @@ module.exports = {
 				/LTF/i,
 				/LTA/i,
 				/KTA/i,
+				/Aftermath/i,
+				/Foremath/i,
+				/Second War/i,
+				/TDC/i,
+				/Dark Crusade/i,
+				/Elector Count/i,
+				/Dragon Age/i,
+				/DAO/i,
+				/Fall of Lordaeron/i,
+				/FoE/i,
+				/North/i,
+				/FoD/i,
+				/Fall of Draenor/i,
 			],
 
 			'grand_strat_hosted_games': [
@@ -133,37 +153,60 @@ module.exports = {
 				/Tel Sirion/i,
 				/Plaguelands/i,
 				/PLEC/i,
+				/Icecrown/i,
+				/Lordaeron City/i,
 			],
 
 			'middle_earth_hosted_games': [
 				/Robert/i,
 				/Rebel/i,
-				/Game of Thrones/i,
-				/GoT/i,
 				/Lord of the Rings/i,
 				/LOTR/i,
 				/BFME/i,
 				/Battle for Middle Earth/i,
 				/Ring/i,
+				/Sauron/i,
+				/Arnor/i,
+				/2nd Age/i,
+				/Second Age/i,
+				/TLA/i,
+				/Last Alliance/i
 			],
 
 			'divided_conq_hosted_games': [
 				/DARKNESS RISING/i,
+				/Scar/i,
 				/Glory of the Horde/i,
 				/Goth/i,
 				/Kings of Azeroth/i,
 				/KoA/i,
 				/Rise of the Legion/i,
-			],
-
-			'roleplay_hosted_games': [
-				/AOC RP/i,
-				/Roleplay/i,
-				/Age of Chaos/i,
-				/RP/i,
+				/Conflict/i,
+				/Sereg/i,
+				/Scourge/i,
+				/Game of Thrones/i,
+				/GoT/i,
+				/Tactics/i,
+				/Age of Wrath/i,
 			],
 			'other_hosted_games': [
-				/.+/,
+			//	/.+/,				//all
+			/World War/i,
+			/WW1/i,
+			/WW2/i,
+			/World in Flames/i,
+			/Axis and Allies/i,
+			/Hearts of Iron/i,
+			/Greece/i,
+			/Risk/i,
+			/Diplomacy/i,
+			/Helms Deep/i,
+			/Coth/i,
+			/Coming of the Horde/i,
+			/Planetary/i,
+			/Dawn of/i,
+			/Kingdoms/i,
+			/Zerg/i,
 			],
 			
 		}
