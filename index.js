@@ -11,6 +11,9 @@ let listeners = require ('./lib/listeners.js');
 client.on ('ready', () => {
     util.info (`Logged in as ${client.user.tag}`);
     
+	//give member default role  when joining server
+	client.on('guildMemberAdd', member => { member.addRole (util.getRole (guild, config.onboarding.defaultrole)); });
+	
     client.on ('message',               ctx (listeners.onMessage));
     client.on ('messageReactionAdd',    ctx (listeners.onMessageReactionAdd));
     client.on ('messageReactionRemove', ctx (listeners.onMessageReactionRemove));

@@ -51,7 +51,6 @@ module.exports = {
   		messageId: '573946465701986312',
   		roles: new Map([
 		['friday_night', 'AzerothianInhib'],
-		['bolvardisapproves', 'RoleplayInhib'], 
 		['sleep', 'OtherInhib'], 
   		['olorin', 'GrandInhib'], 
 		['coin', 'MiddleEarthInhib'], 
@@ -115,13 +114,42 @@ module.exports = {
 	 */
 	gameMonitor: {
 		'hosted_games': {
-			
-			'roleplay_hosted_games': [
-				/AOC RP/i,
-				/Roleplay/i,
-				/Age of Chaos/i,
-				/RP/i,
+			'other_hosted_games': [
+			//	/.+/,				//all
+			/World War/i,
+			/WW1/i,
+			/WW2/i,
+			/World in Flames/i,
+			/Axis and Allies/i,
+			/Hearts of Iron/i,
+			/Greece/i,
+			/Risk/i,
+			/Diplomacy/i,
+			/Helms Deep/i,
+			/Coth/i,
+			/Coming of the Horde/i,
+			/Planetary/i,
+			/Dawn of/i,
+			/Kingdoms/i,
+			/Zerg/i,
+			/Europa/i,
+			/AOC RP/i,
+			/Roleplay/i,
+			/Age of Chaos/i,
+			/RP/i,
 			],
+			
+			'grand_strat_hosted_games': [
+				/TFW/i,
+				/First War/i,
+				/WIP/i,
+				/Tel Sirion/i,
+				/Plaguelands/i,
+				/PLEC/i,
+				/Icecrown/i,
+				/Lordaeron City/i,
+			],
+			
 			'azerothian_hosted_games': [
 				/Azeroth wars/i,
 				/AW/i,
@@ -144,18 +172,10 @@ module.exports = {
 				/North/i,
 				/FoD/i,
 				/Fall of Draenor/i,
+				/Conquest/i,
 			],
 
-			'grand_strat_hosted_games': [
-				/TFW/i,
-				/First War/i,
-				/WIP/i,
-				/Tel Sirion/i,
-				/Plaguelands/i,
-				/PLEC/i,
-				/Icecrown/i,
-				/Lordaeron City/i,
-			],
+			
 
 			'middle_earth_hosted_games': [
 				/Robert/i,
@@ -189,26 +209,6 @@ module.exports = {
 				/Tactics/i,
 				/Age of Wrath/i,
 			],
-			'other_hosted_games': [
-			//	/.+/,				//all
-			/World War/i,
-			/WW1/i,
-			/WW2/i,
-			/World in Flames/i,
-			/Axis and Allies/i,
-			/Hearts of Iron/i,
-			/Greece/i,
-			/Risk/i,
-			/Diplomacy/i,
-			/Helms Deep/i,
-			/Coth/i,
-			/Coming of the Horde/i,
-			/Planetary/i,
-			/Dawn of/i,
-			/Kingdoms/i,
-			/Zerg/i,
-			],
-			
 		}
 	}
 };
